@@ -7,15 +7,8 @@ import { Provider } from "react-redux";
 import router from "./router";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
-
-import AdminRoutes from "./admin/adminRoutes";
 import { AppWrapper } from "./admin/components/common/PageMeta";
 import { ThemeProvider } from "./admin/context/ThemeContext";
-
-const isAdminRoute = window.location.pathname.startsWith("/admin");
-
-console.log(isAdminRoute , "admin");
-
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -23,15 +16,11 @@ root.render(
     <Provider store={jdSchoolStore}>
       <ToastContainer autoClose={3000} />
 
-      {isAdminRoute ? (
-        <AppWrapper>
-          <ThemeProvider>
-          <AdminRoutes />
-          </ThemeProvider>
-        </AppWrapper>
-      ) : (
-        <RouterProvider router={router} />
-      )}
+      <AppWrapper>
+        <ThemeProvider>
+          <RouterProvider router={router} />
+        </ThemeProvider>
+      </AppWrapper>
     </Provider>
   </React.StrictMode>
 );
