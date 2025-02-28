@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 const SchoolTransport = () => {
   return (
@@ -14,9 +16,9 @@ const SchoolTransport = () => {
           <nav className="mt-2">
             <ol className="flex justify-center space-x-2 text-sm">
               <li>
-                <a href="/" className="text-gray-300 hover:text-white">
+                <Link to="/" className="text-gray-300 hover:text-white">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="text-white">/ Rule of Code And Conduct</li>
             </ol>

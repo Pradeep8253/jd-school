@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import {Link} from "react-router-dom"
+
 
 const AnnualPlanner = () => {
   const [plannerImages, setPlannerImages] = useState([]);
@@ -124,8 +126,8 @@ const AnnualPlanner = () => {
                 </button>
 
                 {/* Download button */}
-                <a
-                  href={selectedImage.image.url}
+                <Link
+                  to={selectedImage.image.url}
                   download
                   className="absolute bottom-4 right-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200 flex items-center space-x-2"
                   onClick={(e) => e.stopPropagation()}
@@ -144,7 +146,7 @@ const AnnualPlanner = () => {
                     />
                   </svg>
                   <span>Download</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

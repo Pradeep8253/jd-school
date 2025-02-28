@@ -1,19 +1,13 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
+
 
 const Banner = ({ title, image, breadcrumbItems }) => {
   return (
-    <section
-      className="relative h-48 md:h-56 lg:h-64 overflow-hidden"
-    >
+    <section className="relative h-48 md:h-56 lg:h-64 overflow-hidden">
       {/* Image Container */}
-      <div 
-        className="absolute inset-0 w-full h-full"
-      >
-        <img
-          src={image}
-          alt={title}
-          className="w-full h-full object-cover"
-        />
+      <div className="absolute inset-0 w-full h-full">
+        <img src={image} alt={title} className="w-full h-full object-cover" />
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/50" />
       </div>
@@ -31,18 +25,18 @@ const Banner = ({ title, image, breadcrumbItems }) => {
             <ol className="flex items-center space-x-2 text-sm md:text-base">
               {breadcrumbItems.map((item, index) => (
                 <React.Fragment key={index}>
-                  {index > 0 && (
-                    <span className="text-gray-300 mx-2">/</span>
-                  )}
+                  {index > 0 && <span className="text-gray-300 mx-2">/</span>}
                   <li
                     className={`${
-                      item.active ? 'text-gray-300' : 'text-white hover:text-gray-300'
+                      item.active
+                        ? "text-gray-300"
+                        : "text-white hover:text-gray-300"
                     } transition-colors duration-200`}
                   >
                     {item.active ? (
                       <span>{item.name}</span>
                     ) : (
-                      <a href={item.link}>{item.name}</a>
+                      <Link to={item.link}>{item.name}</Link>
                     )}
                   </li>
                 </React.Fragment>

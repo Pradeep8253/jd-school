@@ -1,4 +1,6 @@
 import React from "react";
+import {Link} from "react-router-dom"
+
 
 const Contact = () => {
   return (
@@ -74,21 +76,21 @@ const Contact = () => {
               </li>
               <li className="flex items-center space-x-3">
                 <i className="fa fa-phone text-blue-500"></i>
-                <a
+                <Link
                   href="tel://9899275937"
                   className="text-blue-500 hover:underline"
                 >
                   9899275937
-                </a>
+                </Link>
               </li>
               <li className="flex items-center space-x-3">
                 <i className="fa fa-envelope-o text-blue-500"></i>
-                <a
+                <Link
                   href="mailto:info@adpsschool.in"
                   className="text-blue-500 hover:underline"
                 >
                   info@adpsschool.in
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

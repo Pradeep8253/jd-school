@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 const Vission = () => {
   return (
@@ -14,9 +16,9 @@ const Vission = () => {
           <nav className="flex justify-center mt-4">
             <ol className="flex space-x-2 text-lg">
               <li>
-                <a href="/" className="hover:underline">
+                <Link to="/" className="hover:underline">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="text-gray-300">/ Vision</li>
             </ol>
@@ -31,12 +33,12 @@ const Vission = () => {
             <h3 className="text-3xl font-semibold">Vision</h3>
             <h5 className="text-xl mt-2">Welcome to JD GLOBAL School</h5>
             <p className="mt-4 text-gray-700 text-justify">
-              We are a proactive school that believes that within each child lies
-              the inherent potential that needs nurturing in a harmonious way.
-              Instilling a habit of learning to learn is the cornerstone of the
-              education we offer. We prepare our children for a rapidly changing
-              world by equipping them with critical thinking skills, a global
-              perspective, and respect for core values.
+              We are a proactive school that believes that within each child
+              lies the inherent potential that needs nurturing in a harmonious
+              way. Instilling a habit of learning to learn is the cornerstone of
+              the education we offer. We prepare our children for a rapidly
+              changing world by equipping them with critical thinking skills, a
+              global perspective, and respect for core values.
             </p>
             <p className="mt-4 text-gray-700 text-justify">
               We are committed to a unique learning approach and an 'Effortless

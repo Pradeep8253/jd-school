@@ -3,6 +3,8 @@ import { MdAttachEmail } from "react-icons/md";
 import { FaHome } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import ScrollToTopButton from "./ScrollToTopButton";
+import { Link } from "react-router-dom";
+
 
 const Footer = () => {
   return (
@@ -15,24 +17,24 @@ const Footer = () => {
               <h3 className="text-lg font-bold mb-4">Our Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="hover:text-gray-400">
+                  <Link to="#" className="hover:text-gray-400">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-400">
+                  <Link to="#" className="hover:text-gray-400">
                     About us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-400">
+                  <Link to="#" className="hover:text-gray-400">
                     Gallery
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-400">
+                  <Link to="#" className="hover:text-gray-400">
                     Event
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -40,24 +42,24 @@ const Footer = () => {
               <h3 className="text-lg font-bold mb-4">Information</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="hover:text-gray-400">
+                  <Link to="#" className="hover:text-gray-400">
                     Mission
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-400">
+                  <Link to="#" className="hover:text-gray-400">
                     Vision
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-400">
+                  <Link to="#" className="hover:text-gray-400">
                     Admission
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-400">
+                  <Link to="#" className="hover:text-gray-400">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -67,7 +69,8 @@ const Footer = () => {
                 <span className="inline-block text-red-500">
                   <FaHome />
                 </span>
-                226, 5th Enclave, Randgram, Opp KM Residency, Raj Nagar Extn., Ghaziabad 201003
+                226, 5th Enclave, Randgram, Opp KM Residency, Raj Nagar Extn.,
+                Ghaziabad 201003
               </p>
               <p className="mb-2">
                 <span className="inline-block text-blue-500">

@@ -107,9 +107,9 @@ const Header = () => {
         {/* Help and Admission Section */}
         <div className="hidden md:flex items-center space-x-4">
           <p className="text-lg">Need Help? Call us free</p>
-          <a href="tel:9555744337" className="text-lg font-semibold">
+          <Link to="tel:9555744337" className="text-lg font-semibold">
             9555744337
-          </a>
+          </Link>
           <Link
             to="/admission"
             className="bg-[#ffc600] text-white px-6 py-4 rounded hover:bg-red-700 transition duration-300"

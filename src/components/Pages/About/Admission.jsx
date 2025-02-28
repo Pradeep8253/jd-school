@@ -1,6 +1,8 @@
 // src/components/Admission.js
 import React from 'react';
 import SmallBanner from '../../Banner/SmallBanner';
+import {Link} from "react-router-dom"
+
 
 
 const Admission = () => {
@@ -32,13 +34,13 @@ const Admission = () => {
                 <li>5. Date of Birth Certificate issued by the Municipal Corporation;</li>
                 <li>6. Download Admission Form Here</li>
               </ul>
-              <a
-                href="images/amizica.pdf"
+              <Link
+                to="images/amizica.pdf"
                 download="Admission Form"
                 className="bg-blue-500 text-white px-4 py-2 rounded inline-block"
               >
                 ADMISSION FORM
-              </a>
+              </Link>
             </div>
 
             <div>

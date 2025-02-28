@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom"
 
 
 const categories = [
@@ -18,14 +19,14 @@ const CategorySection = () => {
         </div>
         <div className="flex flex-wrap justify-center gap-6">
           {categories.map((category) => (
-            <a
+            <Link
               key={category.id}
               href="#"
               className={`w-36 sm:w-44 md:w-48 lg:w-52 flex flex-col items-center p-3 rounded-lg shadow-lg transition-transform transform hover:scale-105 ${category.color}`}
             >
               <img src={category.img} alt={category.name} className="w-30 h-20 mb-2 object-fit" />
               <span className="text-white text-lg font-semibold">{category.name}</span>
-            </a>
+            </Link>
           ))}
         </div>
       </div>
